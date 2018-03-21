@@ -1,0 +1,140 @@
+#sec-09 {
+  background-color: #191919;
+  padding-top: 10.7rem;
+  padding-bottom: 5rem;
+}
+
+.sec-09__title {
+  color: #fff;
+  letter-spacing: 0;
+  margin-bottom: .5rem;
+}
+
+#sec-09 .sec-04__subtitle-span {
+  background-color: #fff;
+  color: #000;
+}
+
+.sec-09__content {
+  margin-bottom: 3.8rem;
+}
+
+.sec-09__content-title {
+  font-family: GothaB;
+  font-size: pxToRem(20px);
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.sec-09__content-text {
+  font-family: GothaR;
+  font-size: pxToRem(16px);
+  color: #a1a1a1;
+  line-height: 1.5;
+  padding-right: .5rem;
+}
+
+.sec-09__content-span {
+  font-family: GothaB;
+  color: #fff;
+}
+
+#sec-09 [class*=col-]:first-child {
+  margin-bottom: 3.5rem;
+}
+
+#sec-09 .sec-01__btn {
+  display: inline-block;
+  width: 18.3rem;
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+#sec-09 .sec-01__btn-container:first-child {
+  margin-bottom: 2.2rem;
+  text-align: center;
+}
+
+#sec-09 .sec-01__btn-container:last-child {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #sec-09 {
+    padding-top: 9.3rem;
+  }
+  .sec-09__title {
+    padding-left: 8.2rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .sec-09__subtitle {
+    padding: 0 9rem 0 14.5rem;
+    position: relative;
+    &::before {
+      display: block;
+      position: absolute;
+      content: url("img/sec-09/arrow-md.png");
+      left: 18%;
+      top: 3rem;
+    }
+  }
+
+  .sec-09__content {
+    padding: 0 9rem 0 8.4rem;
+    margin-bottom: 4.3rem;
+  }
+
+  #sec-09 [class*=col-]:first-child {
+    margin-bottom: 4rem;
+  }
+
+  .sec-09__btn-container {
+    display: flex;
+    padding: 0 8.4rem;
+  }
+
+  #sec-09 .sec-01__btn-container:first-child {
+    margin-bottom: 0;
+  }
+
+  #sec-09 .sec-01__btn-container:last-child {
+    line-height: 1.6;
+    padding-left: 2.5rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  #sec-09 {
+    padding-top: 11.8rem;
+    background-color: transparent;
+  }
+
+  #sec-09-footer-1__container {
+    background-image: url("img/sec-09/bg-lg.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .sec-09__title {
+    padding-left: .3rem;
+  }
+
+  .sec-09__subtitle {
+    padding: 0 0 0 6.6rem;
+  }
+
+  .sec-09__content {
+    padding: .6rem 11.2rem 0 0.5rem;
+  }
+
+  .sec-09__btn-container {
+    padding: 0 11rem 0 .5rem;
+  }
+
+  .sec-09__subtitle:before {
+    left: 1.7%;
+  }
+}

@@ -1,0 +1,38 @@
+$baseFontSize: 16px;
+
+@function pxToRem($val) {
+  $remSize: $val/$baseFontSize;
+  @return #{$remSize}rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container--width {
+  max-width: pxToRem(1170px);
+  min-width: pxToRem(320px);
+}
+
+.title {
+  font-family: GothaB;
+  font-size: pxToRem(36px);
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-family: GothaB;
+  font-size: pxToRem(20px);
+  line-height: 1.2
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-family: GothaB;
+    font-size: pxToRem(60px);
+  }
+}

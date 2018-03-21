@@ -1,0 +1,1 @@
+$(".sec-07__slider").owlCarousel({items:1,itemsCustom:!0,loop:!0,autoHeight:!0,margin:100,responsiveClass:!0,responsive:{0:{items:1,nav:!1},768:{items:1,nav:!1,margin:10},1024:{items:2,nav:!1,margin:5}}});

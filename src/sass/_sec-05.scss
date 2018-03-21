@@ -1,0 +1,122 @@
+#sec-05 {
+  padding-top: 2.5rem;
+  padding-bottom: 7.3rem;
+}
+
+#sec-05 [class*=col-]:first-child {
+  margin-bottom: 2.75rem;
+}
+
+.sec-05__list {
+  margin-bottom: 4.3rem;
+}
+
+#sec-05 .sec-01__btn-container {
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .sec-05__img {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #sec-05 {
+    padding-top: 5.9rem;
+    padding-bottom: 11rem;
+  }
+
+  #sec-05 .container--width {
+    padding: 0 5.4rem;
+  }
+
+  #sec-05 [class*=col-]:first-child {
+    margin-bottom: 3.25rem;
+  }
+
+  .sec-05__list {
+    padding-right: 3rem;
+    margin-bottom: 4.7rem;
+  }
+
+  #sec-05 .sec-01__btn {
+    padding: 1.2rem 9.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #sec-05 {
+    position: relative;
+    padding-top: 8.3rem;
+    &::before {
+      display: block;
+      position: absolute;
+      bottom: 14.4rem;
+      right: 15.5%;
+      content: "work for you";
+      text-transform: uppercase;
+      font-family: GothaB;
+      font-size: pxToRem(10px);
+      color: #26ddf5;
+      letter-spacing: 7px;
+      transform: rotate(90deg);
+    }
+  }
+
+  #sec-05 [class*=col-]:first-child {
+    margin-bottom: 0;
+    &::before {
+      display: block;
+      position: absolute;
+      left: 3.8%;
+      bottom: -1.3rem;
+      content: url("img/sec-05/arrow.png")
+    }
+  }
+
+  #sec-05 [class*=col-]:last-child {
+    padding-left: 1.3rem;
+    padding-top: .3rem;
+  }
+
+  #sec-05 .container--width {
+    padding: 0 15px;
+    padding-left: 1.2rem;
+  }
+
+  #sec-05 .sec-04__title {
+    padding-right: 0;
+  }
+
+  #sec-05 .sec-04__subtitle {
+    padding-right: 3.6rem;
+    text-align: right;
+    margin-bottom: 6.4rem;
+  }
+
+  #sec-05 .sec-04__list {
+    position: relative;
+    padding-right: 6rem;
+    margin-bottom: 4.1rem;
+    &::before {
+      display: block;
+      position: absolute;
+      right: -1.2%;
+      top: 0.2rem;
+      content: url("img/sec-05/circle.png")
+    }
+  }
+
+  #sec-05 .sec-01__btn-container {
+    text-align: left;
+  }
+
+  #sec-05 .sec-01__btn {
+    padding: 1.2rem 5.9rem;
+  }
+
+  .sec-05__img {
+    display: block;
+  }
+}

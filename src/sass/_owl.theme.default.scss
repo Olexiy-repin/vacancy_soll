@@ -1,0 +1,181 @@
+@font-face {
+  font-family: GothaB;
+  src: url('fonts/GothaProBol.woff') format("woff"),
+       url('fonts/GothaProBol.woff2') format("woff2");
+}
+
+.owl-stage-outer {
+  min-height: 300px;
+}
+
+#sec-08 .owl-stage-outer.owl-height {
+  min-height: 518px;
+}
+
+// OWL DOTS
+.owl-dots {
+  counter-reset: dots;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.7rem;
+}
+
+#sec-08 .owl-dots {
+  margin-top: 1.7rem;
+}
+
+#sec-09 .owl-dots {
+  flex-wrap: wrap;
+  margin: auto;
+  width: 16rem;
+  margin-top: 1.9rem;
+}
+
+@media (min-width: 768px) {
+  #sec-09 .owl-dots {
+    margin-top: 2.5rem;
+  }
+}
+
+#sec-10 .owl-dots {
+  justify-content: flex-start;
+  margin-top: 2.5rem;
+}
+
+#sec-11 .owl-dots {
+  margin-top: 1.3rem;
+}
+
+#sec-12 .owl-dots {
+  margin-top: 2.7rem;
+}
+
+#sec-13 .owl-dots {
+  margin-top: 0rem;
+}
+
+@media (min-width: 768px) {
+  #sec-13 .owl-dots {
+    margin-top: 3.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #sec-13 .owl-dots {
+    margin-top: 1.2rem;
+  }
+}
+// OWL DOT
+.owl-dot {
+  font-family: GothaB;
+  color: #fff;
+  font-size: 18px;
+  margin-right: 1.1rem;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &:nth-child(n+10) {
+    &::before {
+      content: counter(dots);
+    }
+  }
+}
+
+#sec-08 .owl-dot {
+  color: #000;
+}
+
+#sec-09 .owl-dot {
+  color: #a3a3a3;
+  margin-right: 1.3rem;
+  margin-bottom: 1rem;
+  &:hover {
+    color: rgb(251, 131, 167);
+  }
+  &:nth-child(n+7) {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+  &:nth-child(6){
+    margin-right: 0;
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &.active {
+    color: #000;
+  }
+}
+
+#sec-10 .owl-dot {
+  color: #a3a3a3;
+  &:hover {
+    color: rgb(251, 131, 167);
+  }
+  &.active {
+    color: #000;
+  }
+}
+
+#sec-11 .owl-dot {
+  color: #a3a3a3;
+  margin-right: 1.2rem;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &:hover {
+    color: rgb(251, 131, 167);
+  }
+  &.active {
+    color: #000;
+  }
+}
+
+#sec-12 .owl-dot {
+  color: #a3a3a3;
+  margin-right: 1.2rem;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &:hover {
+    color: rgb(251, 131, 167);
+  }
+  &.active {
+    color: #000;
+  }
+}
+
+#sec-13 .owl-dot {
+  color: #a3a3a3;
+  margin-right: 1.2rem;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &:hover {
+    color: rgb(251, 131, 167);
+  }
+  &.active {
+    color: #000;
+  }
+}
+
+.owl-dot.active {
+  font-size: 30px;
+  color: #26ddf5;
+}
+
+
+#sec-08 .owl-dot.active {
+  font-size: 30px;
+  color: #26ddf5;
+}
+
+.owl-dot:before {
+  counter-increment:dots;
+  content: "0" counter(dots);
+}
+
+.owl-carousel .owl-item img {
+  width: auto;
+}
