@@ -29,15 +29,27 @@
   line-height: 2.2;
 }
 
-@keyframes spin {
+@keyframes reverse-spin {
   from {
     transform: rotate(0deg);
+    transform-origin: center;
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
+    transform-origin: center;
   }
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
 
 @media (max-width: 767px) {
   .animation-block {
@@ -52,8 +64,21 @@
     padding-bottom: 6.8rem;
     background-image: url("img/sec-02/bg-md.png");
     background-size: auto;
-    background-position: top;
+    background-position: 50% 150%;
     background-repeat: no-repeat;
+    &::before {
+      display: block;
+      content: "what";
+      position: absolute;
+      top: 14.6rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: GothaB;
+      font-size: pxToRem(180px);
+      color: #f7f7f7;
+      text-transform: uppercase;
+      z-index: -2;
+    }
   }
 
   .sec-02__title {
@@ -90,20 +115,51 @@
     letter-spacing: -.2px;
   }
 
+  .animation {
+    position: relative;
+    width: inherit;
+    height: inherit;
+  }
+
   .animation-block {
     position: absolute;
-    top: 10.65rem;
-    left: 11.25rem;
+    top: 6.45rem;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1;
+    width: 388px;
+    height: 411px;
   }
 
   .animation-img {
     display: block;
-    // animation-name: spin;
-    // animation-duration: 4000ms;
-    // animation-iteration-count: infinite;
-    // animation-timing-function: linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
   }
+
+  .animation-img-01 {
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  // .animation-img-02 {
+  //   animation-name: reverse-spin;
+  //   animation-duration: 4000ms;
+  //   animation-iteration-count: infinite;
+  //   animation-timing-function: linear;
+  // }
+  //
+  // .animation-img-03 {
+  //   animation-name: spin;
+  //   animation-duration: 4000ms;
+  //   animation-iteration-count: infinite;
+  //   animation-timing-function: linear;
+  // }
 }
 
 @media (min-width: 1200px) {
@@ -112,15 +168,9 @@
     padding-bottom: 12.9rem;
     position: relative;
     &::before {
-      display: block;
-      position: absolute;
       top: 11.8rem;
-      left: 19.1%;
-      content: "what";
-      font-family: GothaB;
+      left: 40.3%;
       font-size: pxToRem(250px);
-      color: #f7f7f7;
-      text-transform: uppercase;
     }
   }
 
