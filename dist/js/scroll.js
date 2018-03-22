@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".dummy").viewportChecker({offset:"50%",callbackFunction:function(e,c){"add"==c?$(".scroll-btn").addClass("fixed"):$(".scroll-btn").removeClass("fixed")}}),$("#sec-01").viewportChecker({callbackFunction:function(e,c){$(".scroll-btn").removeClass("fixed")}})});
+$(document).ready(function(){$(".dummy").viewportChecker({repeat:!0,callbackFunction:function(e,o){console.log(o),"add"==o?$(".scroll-btn").addClass("fixed"):$(".scroll-btn").removeClass("fixed")}})});

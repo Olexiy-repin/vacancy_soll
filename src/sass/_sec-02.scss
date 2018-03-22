@@ -87,7 +87,8 @@
     top: 50%;
     transform: translateY(-50%) rotate(90deg);
     z-index: 5;
-    right: -8%;
+    right: -5.5rem;
+    opacity: 1 !important;
   }
 
   .fixed {
@@ -160,8 +161,8 @@
   }
 
   .animation-img-01 {
-    animation-name: reverse-spin;
-    animation-duration: 10000ms;
+    animation-name: spin;
+    animation-duration: 8000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
