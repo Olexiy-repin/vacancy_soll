@@ -56,13 +56,39 @@
   color: #000;
 }
 
+@media (max-width: 767px) {
+  .sec-04__animation-block-container {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   #sec-04 {
+    position: relative;
     padding-top: 9.3rem;
+    &::before {
+      display: block;
+      position: absolute;
+      top: 9.6rem;
+      right: 11.2%;
+      content: url("img/sec-04/down-arrow-md.png");
+    }
   }
 
   #sec-04 .container--width {
     padding: 0 5.4rem;
+    &::before {
+      display: block;
+      position: absolute;
+      top: 23.7rem;
+      right: 0;
+      content: "week";
+      font-family: GothaB;
+      font-size: pxToRem(180px);
+      color: #f7f7f7;
+      text-transform: uppercase;
+      z-index: -5;
+    }
   }
 
   .sec-04__title {
@@ -89,11 +115,108 @@
   #sec-04 [class*=col-]:first-child {
     margin-bottom: 3.8rem;
   }
+
+  .sec-04__animation {
+    position: relative;
+    width: inherit;
+    height: inherit;
+  }
+
+  .sec-04__animation-block-container {
+    position: absolute;
+    top: -7rem;
+    left: 12.4%;
+    z-index: -1;
+    width: 619px;
+    height: 719px;
+    background-image: url("img/sec-04/animation-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .sec-04__animation-block {
+    width: 474px;
+    height: 368px;
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+  }
+
+  .sec-04__animation-img {
+    display: block;
+  }
+
+  .sec-04__animation-block-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .sec-04__animation-block-img-01 {
+    left: 37.8%;
+    top: 32%;
+  }
+
+  .sec-04__animation-block-img-02 {
+    left: 37.5%;
+    top: 32%;
+  }
+
+  .sec-04__animation-block-img-03 {
+    left: 50%;
+  }
+
+  .sec-04__animation-block-img-04 {
+    left: 50%;
+  }
+  //
+  // .sec-04__animation-img-01 {
+  //   animation-name: reverse-spin;
+  //   animation-duration: 10000ms;
+  //   animation-iteration-count: infinite;
+  //   animation-timing-function: linear;
+  // }
+  //
+  // .sec-04__animation-img-02 {
+  //   animation-name: spin;
+  //   animation-duration: 8000ms;
+  //   animation-iteration-count: infinite;
+  //   animation-timing-function: linear;
+  // }
+
+  .sec-04__animation-img-03 {
+    animation-name: reverse-spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .sec-04__animation-img-04 {
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
 }
 
 @media (min-width: 1200px) {
   #sec-04 {
     padding-top: 11.5rem;
+    &::before {
+      top: 11.8rem;
+      right: 19.7%;
+    }
+    &::after {
+      display: block;
+      position: absolute;
+      bottom: 3.5rem;
+      left: 20.4%;
+      content: url("img/sec-05/circle.png");
+    }
   }
 
   #sec-04 .row [class*=col-]:first-child {
@@ -107,6 +230,13 @@
 
   #sec-04 .container--width {
     padding: 0 15px;
+    &::before {
+      width: 1170px;
+      margin: auto;
+      top: 41.1rem;
+      left: 0;
+      font-size: pxToRem(250px);
+    }
   }
 
   .sec-04__title {
@@ -115,5 +245,10 @@
 
   .sec-04__list {
     padding-right: 5.3rem;
+  }
+
+  .sec-04__animation-block-container {
+    top: 8.2rem;
+    left: 4.4%;
   }
 }

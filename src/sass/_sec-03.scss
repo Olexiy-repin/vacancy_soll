@@ -63,6 +63,13 @@
       left: 48.4%;
       font-size: pxToRem(250px);
     }
+    &::after {
+      display: block;
+      position: absolute;
+      bottom: 12.6rem;
+      left: 20.4%;
+      content: url("img/sec-03/circle.png");
+    }
   }
 
   #sec-03 [class*=col-]:first-child {

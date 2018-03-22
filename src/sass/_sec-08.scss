@@ -43,6 +43,7 @@
   #sec-08 {
     padding-top: 10.3rem;
     padding-bottom: 6.5rem;
+    position: relative;
   }
 
   .sec-08__lg-list {
@@ -65,6 +66,10 @@
     padding-left: 1rem;
   }
 
+  .sec-08__middle-list {
+    position: relative;
+  }
+
   .sec-08__middle-list .row:first-child {
     margin-bottom: 1.3rem;
   }
@@ -76,6 +81,82 @@
 
   #sec-08 .slides {
     margin-bottom: 3rem;
+  }
+
+  .sec-08__animation {
+    position: relative;
+    width: inherit;
+    height: inherit;
+  }
+
+  .sec-08__animation-block-container {
+    position: absolute;
+    top: -10.7rem;
+    left: 34.5%;
+    z-index: -1;
+    width: 494px;
+    height: 555px;
+    background-image: url("img/sec-08/animation-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow: hidden;
+  }
+
+  .sec-08__animation-block {
+    width: 449px;
+    height: 328px;
+    position: absolute;
+    top: 7.2rem;
+    left: 8.9%;
+    z-index: -1;
+  }
+
+  .sec-08__animation-img {
+    display: block;
+  }
+
+  .sec-08__animation-block-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .sec-08__animation-block-img-04 {
+    left: 52%;
+  }
+
+  .sec-08__animation-block-img-03 {
+    left: 52%;
+  }
+
+  .sec-08__animation-img-01 {
+    animation-name: reverse-spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .sec-08__animation-img-02 {
+    animation-name: spin;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .sec-08__animation-img-03 {
+    animation-name: reverse-spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .sec-08__animation-img-04 {
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
 }
@@ -125,5 +206,10 @@
 
   #sec-08 .second-counter {
     top: .6rem;
+  }
+
+  .sec-08__lg-list .sec-08__animation-block-container {
+    top: 1.3rem;
+    left: 35.8%;
   }
 }

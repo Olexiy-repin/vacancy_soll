@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".dummy").viewportChecker({offset:"50%",callbackFunction:function(e,c){"add"==c?$(".scroll-btn").addClass("fixed"):$(".scroll-btn").removeClass("fixed")}}),$("#sec-01").viewportChecker({callbackFunction:function(e,c){$(".scroll-btn").removeClass("fixed")}})});

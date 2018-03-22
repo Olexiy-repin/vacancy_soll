@@ -51,6 +51,10 @@
   .animation-block {
     display: none;
   }
+
+  #sec-02 .sec-01__btn-container {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -75,6 +79,23 @@
       text-transform: uppercase;
       z-index: -2;
     }
+  }
+
+  #sec-02 .sec-01__btn-container {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    z-index: 5;
+    right: -8%;
+  }
+
+  .fixed {
+    position: fixed !important;
+  }
+
+  .absolute {
+    position: absolute !important;
   }
 
   .sec-02__title {
@@ -119,12 +140,12 @@
 
   .animation-block {
     position: absolute;
+    width: 388px;
+    height: 411px;
+    z-index: -1;
     top: 6.45rem;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1;
-    width: 388px;
-    height: 411px;
   }
 
   .animation-img {
@@ -139,22 +160,22 @@
   }
 
   .animation-img-01 {
-    animation-name: spin;
-    animation-duration: 4000ms;
+    animation-name: reverse-spin;
+    animation-duration: 10000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
 
   .animation-img-02 {
-    animation-name: reverse-spin;
-    animation-duration: 4000ms;
+    animation-name: spin;
+    animation-duration: 8000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
-  
+
   .animation-img-03 {
-    animation-name: spin;
-    animation-duration: 4000ms;
+    animation-name: reverse-spin;
+    animation-duration: 10000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
@@ -165,11 +186,33 @@
     padding-top: 15.8rem;
     padding-bottom: 12.9rem;
     position: relative;
+    background-image: none;
     &::before {
       top: 11.8rem;
       left: 40.3%;
       font-size: pxToRem(250px);
     }
+    &::after {
+      display: block;
+      position: absolute;
+      bottom: 13rem;
+      left: 20.4%;
+      content: url("img/sec-05/circle.png");
+    }
+  }
+
+  .animation-block {
+    position: absolute;
+    top: -0.35rem;
+    left: 45.3%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 751px;
+    height: 751px;
+    background-image: url("img/sec-02/bg-md.png");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
   }
 
   #sec-02 [class*=col-]:first-child {
